@@ -1,2 +1,8 @@
 /bin/*
 /build/*
+/*.config
+/*.creator
+/*.creator.user
+/*.files
+/*.includes
+/CMakeLists.txt.user

@@ -38,7 +38,7 @@ set(COMMON_INCLUDES ${CODE_BASE_PATH}/include ${CODE_BASE_PATH}/lib)
 
 set(EXTERNAL_INCLUDES ${LIBIGL_INCLUDE_DIR} ${nanoflann_INCLUDE_DIRS})
 
-FILE(GLOB COMMON_SOURCES ${CODE_BASE_PATH}/src/*.cpp ${CODE_BASE_PATH}/libs/*/*.hpp ${CODE_BASE_PATH}/libs/*/*.h ${CODE_BASE_PATH}/libs/*/*.cpp)
+FILE(GLOB COMMON_SOURCES ${CODE_BASE_PATH}/src/*.cpp  ${CODE_BASE_PATH}/src/*.hpp ${CODE_BASE_PATH}/libs/*/*.hpp ${CODE_BASE_PATH}/libs/*/*.h ${CODE_BASE_PATH}/libs/*/*.cpp)
 add_executable(${PROJECT_NAME} ${COMMON_SOURCES})
 target_include_directories(${PROJECT_NAME} PUBLIC ${COMMON_INCLUDES} ${EXTERNAL_INCLUDES})
 target_link_libraries(${PROJECT_NAME} PUBLIC ${LIBRARIES})
